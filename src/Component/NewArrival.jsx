@@ -21,7 +21,7 @@ setproduct(data.products)
   return (
 <>
 <div className='text-center text-4xl font-bold font-serif m-10'>
-  <h1>NEW ARRIVALS</h1>
+  <h1 className='font-serif'>NEW ARRIVALS</h1>
 </div>
 
 <div className='flex items-center justify-between'>
@@ -45,7 +45,7 @@ setproduct(data.products)
       ))
     }
     </div>
-    <TopSelling/>
+   
     </>
     
     

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Dresstyle from './Dresstyle';
 
 function TopSelling() {
 let [top ,settop] = useState([])
@@ -20,9 +21,9 @@ useEffect(()=>{
 
   return (
     <div>
-      <div className='  m-16 font-bold bg-gray-400  text-center '><button>View All</button></div>
+      <div className='  m-16  text-center '><button className='p-2 rounded-2xl bg-gray-200'>View All</button></div>
 
-<div className='text-center text-4xl font-bold m-8'><h1>TOP SELLING</h1></div>
+<div className='font-serif text-center text-4xl font-bold m-8'><h1>TOP SELLING</h1></div>
 <div>
   <div className='flex items-center justify-between'>
 {
@@ -46,7 +47,7 @@ top.map((tp)=>(
 </div>
 </div>
 
-
+<Dresstyle/>
     </div>
   )
 }

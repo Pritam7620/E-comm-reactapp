@@ -1,6 +1,7 @@
 import React from 'react'
 import clothslogo from './clothslogo.png';
 import NewArrival from './NewArrival';
+import TopSelling from './TopSelling';
 
 function HeroSection() {
   return (
@@ -63,7 +64,9 @@ function HeroSection() {
         </div>
       </div>
       <NewArrival/>
+      <TopSelling/>
     </section>
+
   )
 }
 
