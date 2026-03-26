@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import TopSelling from './TopSelling';
 
 function NewArrival() {
 
@@ -20,7 +21,7 @@ setproduct(data.products)
   return (
 <>
 <div className='text-center text-4xl font-bold font-serif m-10'>
-  <h1>New Arrivals</h1>
+  <h1>NEW ARRIVALS</h1>
 </div>
 
 <div className='flex items-center justify-between'>
@@ -30,7 +31,7 @@ setproduct(data.products)
 <div >
   <img  className='bg-gray-200 rounded-2xl' src={pr.thumbnail} alt={pr.title} />
 <p className='text-center font-bold '>{pr.title}</p>
-<p className='text-center font-medium'>{pr.rating}</p>
+<p className='text-center font-medium'>stock : {pr.stock}</p>
 <div className='flex  font-medium gap-4 justify-center'>
 <p className="text-center font-medium text-yellow-500">
   {"⭐".repeat(Math.floor(pr.rating))}
@@ -44,7 +45,7 @@ setproduct(data.products)
       ))
     }
     </div>
-    
+    <TopSelling/>
     </>
     
     
