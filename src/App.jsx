@@ -3,13 +3,26 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './Component/Home'
+import Header from './Component/Header'
+import NewArrival from './Component/NewArrival'
+import HeroSection from './Component/HeroSection'
 
 function App() {
   
 
   return (
     <>
-      
+      <BrowserRouter>
+      <Routes>
+
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/Header' element={<Header/>}></Route>
+        <Route path='/NewArrival' element={<NewArrival/>} ></Route>
+        <Route path='/HeroSection' element={<HeroSection/>}></Route>
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }
