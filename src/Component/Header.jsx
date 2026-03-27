@@ -27,9 +27,9 @@ function Header() {
   </div>
   <div className='flex gap-8'>
 
-<input className='bg-sky-200 rounded-3xl' type="text" placeholder='Search for Products.....' />
+<input className='bg-sky-200 w-96 rounded-2xl ' type="text" placeholder=' Search for Products.....' />
 <i className="fa-solid fa-cart-shopping"></i>
-<i className="fa-regular fa-circle-user"></i>
+<Link to="/Login" ><i className="fa-regular fa-circle-user"></i></Link>
   </div>
 </div>
 <HeroSection></HeroSection>

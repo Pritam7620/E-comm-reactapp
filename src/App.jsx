@@ -8,6 +8,7 @@ import Home from './Component/Home'
 import Header from './Component/Header'
 import NewArrival from './Component/NewArrival'
 import HeroSection from './Component/HeroSection'
+import Login from './Component/Login'
 
 function App() {
   
@@ -21,6 +22,8 @@ function App() {
         <Route path='/Header' element={<Header/>}></Route>
         <Route path='/NewArrival' element={<NewArrival/>} ></Route>
         <Route path='/HeroSection' element={<HeroSection/>}></Route>
+        <Route path='/Login' element={<Login></Login>}></Route>
+
       </Routes>
       </BrowserRouter>
     </>
