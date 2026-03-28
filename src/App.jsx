@@ -18,8 +18,8 @@ function App() {
       <BrowserRouter>
       <Routes>
 
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/Header' element={<Header/>}></Route>
+        
+        <Route path='/' element={<Header/>}></Route>
         <Route path='/NewArrival' element={<NewArrival/>} ></Route>
         <Route path='/HeroSection' element={<HeroSection/>}></Route>
         <Route path='/Login' element={<Login></Login>}></Route>
