@@ -10,8 +10,8 @@ function Footer() {
           <p className='mb-2'>wwe have clothes that suits your style and <br />which your proud to wear. from <br />women to men</p>
           <div className='flex gap-8 mt-5 text-3xl '> <i className="fa-brands fa-x-twitter"></i>
             <i className="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-github"></i></div>
+            <i className="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-github"></i></div>
 
         </div>
         <div>
@@ -61,11 +61,11 @@ function Footer() {
         <div>
           <p>shpo.co @2002-2023. All right Reserved</p></div>
         <div className='flex gap-8 text-3xl'>
-          <i class="fa-brands fa-cc-visa"></i>
-          <i class="fa-brands fa-cc-mastercard"></i>
-          <i class="fa-brands fa-cc-paypal"></i>
-          <i class="fa-brands fa-apple-pay"></i>
-          <i class="fa-brands fa-google-pay"></i>
+          <i className="fa-brands fa-cc-visa"></i>
+          <i className="fa-brands fa-cc-mastercard"></i>
+          <i className="fa-brands fa-cc-paypal"></i>
+          <i className="fa-brands fa-apple-pay"></i>
+          <i className="fa-brands fa-google-pay"></i>
         </div>
       </div>
 

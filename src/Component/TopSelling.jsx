@@ -27,8 +27,8 @@ useEffect(()=>{
 <div>
   <div className='flex items-center justify-between'>
 {
-top.map((tp)=>(
-<div>
+top.map((tp ,i)=>(
+<div key={i}>
   <img  className='bg-gray-200 rounded-2xl' src={tp.thumbnail} alt={tp.title} />
 <p className='text-center font-bold '>{tp.title}</p>
 <p className='text-center font-medium'>stock : {tp.stock}</p>

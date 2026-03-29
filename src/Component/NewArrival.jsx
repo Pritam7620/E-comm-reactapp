@@ -28,10 +28,10 @@ setproduct(data.products)
 <div className='flex items-center justify-between'>
     
     {
-      prod.map((pr)=>(
+      prod.map((pr , key)=>(
 
 
-<div >
+<div key={key}>
   <img    onClick={() => navi(`/ProductDetails/${pr.id}`)} className='bg-gray-200 rounded-2xl' src={pr.thumbnail} alt={pr.title} />
 <p className='text-center font-bold '>{pr.title}</p>
 <p className='text-center font-medium'>stock : {pr.stock}</p>

@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { createContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import HeroSection from './HeroSection'
 
 function Header() {
+
+
   return (
     <div>
       <div className='flex bg-black text-white justify-between h-10 items-center px-9'>
