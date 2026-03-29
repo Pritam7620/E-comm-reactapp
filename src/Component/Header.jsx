@@ -16,10 +16,10 @@ function Header() {
 
 </div>
 
-{/*------------------next head-----------------*/}
+{/*------------------next head-----------------*/} 
 <div className='h-14 bg-amber-300 flex justify-between items-center pl-14 pr-14'>
   <div className='flex gap-10'>
-    <div>Shop.co</div>
+    <div className='text-2xl font-bold font-serif' ><Link to="/" >SHOP.CO</Link> </div>
     <p>Shop <i className="fa-solid fa-angle-down"></i></p>
     <p>OnSale</p>
     <Link to="/NewArrival">NewArrival</Link>
@@ -31,11 +31,12 @@ function Header() {
 <div className='text-2xl flex gap-10 justify-between items-center'>
   <i className="fa-solid fa-cart-shopping"></i>
 <Link to="/Login" ><i className="fa-regular fa-circle-user"></i></Link>
+
 </div>
 
   </div>
 </div>
-<HeroSection></HeroSection>
+
     </div>
 
 

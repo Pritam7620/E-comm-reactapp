@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import TopSelling from './TopSelling';
+import { useNavigate } from 'react-router-dom';
 
 function NewArrival() {
-
+   let navi = useNavigate()
   let [prod , setproduct] = useState([])
 
  async function getProduct(){
@@ -28,8 +29,10 @@ setproduct(data.products)
     
     {
       prod.map((pr)=>(
+
+
 <div >
-  <img  className='bg-gray-200 rounded-2xl' src={pr.thumbnail} alt={pr.title} />
+  <img    onClick={() => navi(`/ProductDetails/${pr.id}`)} className='bg-gray-200 rounded-2xl' src={pr.thumbnail} alt={pr.title} />
 <p className='text-center font-bold '>{pr.title}</p>
 <p className='text-center font-medium'>stock : {pr.stock}</p>
 <div className='flex  font-medium gap-4 justify-center'>
