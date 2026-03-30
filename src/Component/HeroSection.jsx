@@ -44,7 +44,6 @@ function HeroSection() {
           </div>
         </div>
 
-        {/* RIGHT IMAGE */}
         <div className="relative">
          
 <img  className="w-full max-w-md mx-auto (w-1/3)" src={clothslogo} alt="clothslogo" />
@@ -53,7 +52,7 @@ function HeroSection() {
         </div>
       </div>
 
-      {/* BRAND BAR */}
+     
       <div className="bg-black text-white mt-12 py-4">
         <div className="flex justify-around text-sm md:text-lg font-semibold tracking-wide">
           <span>VERSACE</span>
