@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <div className='mt-16'>
+    <div className='mt-16 p-12'>
       <div className='flex justify-between p-8 bg-sky-100 border-b-1'>
 
         <div className='text-black '>
@@ -62,7 +62,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className='flex justify-between pl-12 pr-12 mt-12'>
+      <div className='flex justify-between pl-12 pr-12 mt-8 mb-4'>
         <div>
           <p>shpo.co @2002-2023. All right Reserved</p></div>
         <div className='flex gap-8 text-3xl'>

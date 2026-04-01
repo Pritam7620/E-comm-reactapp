@@ -10,6 +10,7 @@ import NewArrival from './Component/NewArrival'
 import HeroSection from './Component/HeroSection'
 import Login from './Component/Login'
 import ProductDetails from './ProductDetails'
+import Youlike from './Component/Youlike'
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path='/HeroSection' element={<HeroSection/>}></Route>
         <Route path='/Login' element={<Login></Login>}></Route>
 <Route path='/ProductDetails/:Productid' element= {<ProductDetails/>} ></Route>
+<Route path='/youlike' element={<Youlike></Youlike>}></Route>
       </Routes>
       </BrowserRouter>
     </>

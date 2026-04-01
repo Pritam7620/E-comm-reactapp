@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import Header from './Component/Header';
+import Youlike from './Component/Youlike';
 
 
 function ProductDetails() {
@@ -134,6 +135,7 @@ Productinfo();
 
     </div>
   </div>
+  <Youlike/>
 </div>
   )
 }
