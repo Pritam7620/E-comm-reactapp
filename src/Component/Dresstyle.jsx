@@ -4,6 +4,7 @@ import formal from "./Formal.png"
 import gym from "./gym.png"
 import party from './Party.png'
 import Stayuptodate from './Stayuptodate'
+import { Link } from 'react-router-dom'
 
 function Dresstyle() {
   return (
@@ -20,11 +21,11 @@ function Dresstyle() {
 
       
         <div className="rounded-2xl overflow-hidden bg-gray-100" >
-          <img
+          <Link to="/casual" > <img
             src={casual}
             alt="casual"
             className="w-full h-96 "
-          />
+          /></Link>
         </div>
 
        

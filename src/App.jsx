@@ -11,6 +11,7 @@ import HeroSection from './Component/HeroSection'
 import Login from './Component/Login'
 import ProductDetails from './ProductDetails'
 import Youlike from './Component/Youlike'
+import Casual from './Component/Casual'
 
 
 
@@ -23,13 +24,14 @@ function App() {
   
       <Routes>
 
-        
         <Route path='/' element={  <><Header/> <HeroSection/></>}></Route>
         <Route path='/NewArrival' element={<NewArrival/>} ></Route>
         <Route path='/HeroSection' element={<HeroSection/>}></Route>
         <Route path='/Login' element={<Login></Login>}></Route>
 <Route path='/ProductDetails/:Productid' element= {<ProductDetails/>} ></Route>
 <Route path='/youlike' element={<Youlike></Youlike>}></Route>
+
+<Route path='/casual' element={ <> <Header></Header><Casual></Casual> </> }></Route>
       </Routes>
       </BrowserRouter>
     </>
