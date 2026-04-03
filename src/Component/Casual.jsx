@@ -39,11 +39,11 @@ useEffect(()=>{
 <p className='text-center font-bold '>{it.title}</p>
 <p className='text-center font-medium'>stock : {it.stock}</p>
 <div className='flex  font-medium gap-4 justify-center'>
-<p className="text-center font-medium text-yellow-500">
+<p className="text-center font-medium text-yellow-500 mt-1">
   {"⭐".repeat(Math.floor(it.rating))}
   <span className="text-black ml-1">({it.rating})</span>
 </p>
-<p className='bg-sky-300 rounded-2xl p-1 w-12'>{it.discountPercentage}</p>
+<p className='bg-sky-300 rounded-2xl p-1 w-12'>{it.discountPercentage}%</p>
 
 
 </div>

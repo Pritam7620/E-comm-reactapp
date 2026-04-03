@@ -33,13 +33,13 @@ top.map((tp ,i)=>(
 <p className='text-center font-bold '>{tp.title}</p>
 <p className='text-center font-medium'>stock : {tp.stock}</p>
 <div className='flex  font-medium gap-4 justify-center'>
-<p className="text-center font-medium text-yellow-500">
+<p className="text-center font-medium text-yellow-500 mt-1 ">
   {"⭐".repeat(Math.floor(tp.rating))}
   <span className="text-black ml-1">({tp.rating})</span>
 </p>
-<p className='bg-sky-300 rounded-2xl p-1 w-12'>{tp.discountPercentage}</p>
+<p className='bg-green-400 rounded-2xl p-1 w-14'>{tp.discountPercentage}%</p>
 </div>
-
+<p className='text-center font-bold p-4'>Price : ${tp.price}</p>
 </div>
 ))
 

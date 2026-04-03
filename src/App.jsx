@@ -14,6 +14,7 @@ import Youlike from './Component/Youlike'
 import Casual from './Component/Casual'
 import Stayuptodate from './Component/Stayuptodate'
 import FormalCloths from './Component/FormalCloths'
+import TopSelling from './Component/TopSelling'
 
 
 
@@ -26,8 +27,8 @@ function App() {
   
       <Routes>
 
-        <Route path='/' element={  <><Header/> <HeroSection/></>}></Route>
-        <Route path='/NewArrival' element={<NewArrival/>} ></Route>
+        <Route path='/' element={  <><Header/> <HeroSection/><NewArrival/><TopSelling/></>}></Route>
+        <Route path='/NewArrival' element={<><Header/><NewArrival/></>} ></Route>
         <Route path='/HeroSection' element={<HeroSection/>}></Route>
         <Route path='/Login' element={<Login></Login>}></Route>
 <Route path='/ProductDetails/:Productid' element= {<ProductDetails/>} ></Route>

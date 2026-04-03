@@ -11,7 +11,7 @@ function Header() {
   
   <p className='text-center flex-1'>
     sign up & get 20% off to your first order. 
-    <span className='border-b-2 ml-1'>Sign Up Now</span>
+    <a className='border-b-2 ml-1' href="Login">Sign Up Now</a>
   </p>
 
   <i className="fa-solid fa-xmark cursor-pointer"></i>
@@ -23,15 +23,15 @@ function Header() {
   <div className='flex gap-10'>
     <div className='text-2xl font-bold font-serif' ><Link to="/" >SHOP.CO</Link> </div>
     <p>Shop <i className="fa-solid fa-angle-down"></i></p>
-    <p>OnSale</p>
-    <Link to="/NewArrival">NewArrival</Link>
+    <a href='#sale'>OnSale</a>
+    <a href='#newarrival'>NewArrival</a>
     <p>brands</p>
   </div>
   <div className='flex gap-8'>
 
 <input className='bg-sky-200 w-96 rounded-2xl ' type="text" placeholder='   Search for Products.....' />
 <div className='text-2xl flex gap-10 justify-between items-center'>
-  <i className="fa-solid fa-cart-shopping"></i>
+<a href="#newarrival"><i className="fa-solid fa-cart-shopping"></i></a>  
 <Link to="/Login" ><i className="fa-regular fa-circle-user"></i></Link>
 
 </div>

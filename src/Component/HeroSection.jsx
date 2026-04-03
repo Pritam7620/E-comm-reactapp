@@ -62,8 +62,8 @@ function HeroSection() {
           <span>Calvin Klein</span>
         </div>
       </div>
-      <NewArrival/>
-      <TopSelling/>
+     
+      
     </section>
 
   )

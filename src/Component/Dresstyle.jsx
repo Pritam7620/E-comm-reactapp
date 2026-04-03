@@ -9,10 +9,10 @@ import { Link } from 'react-router-dom'
 function Dresstyle() {
   return (
     <>
-    <div className="bg-gray-200 p-10 rounded-3xl mt-24">
+    <div id='sale' className="bg-gray-200 p-10 rounded-3xl mt-24">
 
       
-      <div className='text-center font-bold font-serif text-4xl mb-10'>
+      <div  className='text-center font-bold font-serif text-4xl mb-10'>
         <h1>BROWSE BY DRESS STYLE</h1>
       </div>
 

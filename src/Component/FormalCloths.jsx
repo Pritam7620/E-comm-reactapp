@@ -38,11 +38,11 @@ FormalProd();
 <p className='text-center font-bold '>{pp.title}</p>
 <p className='text-center font-medium'>stock : {pp.stock}</p>
 <div className='flex  font-medium gap-4 justify-center'>
-<p className="text-center font-medium text-yellow-500">
+<p className="text-center font-medium text-yellow-500 mt-1">
   {"⭐".repeat(Math.floor(pp.rating))}
   <span className="text-black ml-1">({pp.rating})</span>
 </p>
-<p className='bg-sky-300 rounded-2xl p-1 w-12'>{pp.discountPercentage}</p>
+<p className='bg-sky-300 rounded-2xl p-1 w-12'>{pp.discountPercentage}%</p>
 
 
 </div>
