@@ -30,11 +30,12 @@ function Dresstyle() {
 
        
         <div className="rounded-2xl overflow-hidden bg-gray-100">
-          <img
+        <Link to="/Formal">
+        <img
             src={formal}
             alt="formal"
             className="w-full h-96"
-          />
+          /></Link>  
         </div>
 
         

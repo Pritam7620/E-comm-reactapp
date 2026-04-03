@@ -12,6 +12,8 @@ import Login from './Component/Login'
 import ProductDetails from './ProductDetails'
 import Youlike from './Component/Youlike'
 import Casual from './Component/Casual'
+import Stayuptodate from './Component/Stayuptodate'
+import FormalCloths from './Component/FormalCloths'
 
 
 
@@ -31,7 +33,8 @@ function App() {
 <Route path='/ProductDetails/:Productid' element= {<ProductDetails/>} ></Route>
 <Route path='/youlike' element={<Youlike></Youlike>}></Route>
 
-<Route path='/casual' element={ <> <Header></Header><Casual></Casual> </> }></Route>
+<Route path='/casual' element={ <> <Header></Header><Casual></Casual><Stayuptodate></Stayuptodate> </> }></Route>
+<Route path='/Formal' element={<><Header/><FormalCloths/><Stayuptodate/></>}></Route>
       </Routes>
       </BrowserRouter>
     </>

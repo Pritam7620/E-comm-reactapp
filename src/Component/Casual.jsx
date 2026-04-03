@@ -5,10 +5,13 @@ function Casual() {
   let [items , setitems] = useState([])
 
 async function Casuals(){
-   let res = await fetch("https://dummyjson.com/products/category/mens-shirts")
-let data = await res.json();
+   let res1 = await fetch("https://dummyjson.com/products/category/mens-shirts?limit=4")
+let data1 = await res1.json();
 
-setitems(data.products)
+let res2 = await fetch("https://dummyjson.com/products/category/womens-dresses?limit=4");
+let data2 = await res2.json();
+
+setitems([...data1.products , ...data2.products])
 
 }
 
@@ -22,17 +25,17 @@ useEffect(()=>{
   return (
     <div>
       <div>
-         <div className='flex justify-between  ml-60 mr-40 mt-12' >
+         <div className='flex justify-between  ml-60 mr-50 mt-12 mb-8' >
 <p className='font-bold text-2xl'>Casual</p>
 <p>showing 1-10 of 100 products</p>
 
          </div>
 
-         <div className='flex justify-center items-center'>
+         <div className='flex justify-center items-center flex-wrap mr-28 gap-5 p-8 ml-1'>
           {
             items.map((it,i)=>(
-            <div key={i}>
-  <img   src={it.thumbnail} alt={it.title} />
+            <div key={i} >
+  <img className='p-2'  src={it.thumbnail} alt={it.title} />
 <p className='text-center font-bold '>{it.title}</p>
 <p className='text-center font-medium'>stock : {it.stock}</p>
 <div className='flex  font-medium gap-4 justify-center'>
@@ -42,8 +45,12 @@ useEffect(()=>{
 </p>
 <p className='bg-sky-300 rounded-2xl p-1 w-12'>{it.discountPercentage}</p>
 
-</div>
 
+</div>
+<div  className='text-center font-bold text-1xl'>
+  <p> price : ${it.price}</p>
+ 
+</div>
 </div>
 
             ))
