@@ -1,7 +1,9 @@
+
 import React from 'react'
 import clothslogo from './clothslogo.png';
 import NewArrival from './NewArrival';
 import TopSelling from './TopSelling';
+import { Link } from 'react-router-dom';
 
 function HeroSection() {
   return (
@@ -21,10 +23,9 @@ function HeroSection() {
             designed to bring out your individuality and cater to your sense of style.
           </p>
 
-          
-          <button className=" bg-black mt-6  text-white  px-10 py-4 rounded-full font-medium hover:bg-gray-800 transition  p-11">
+          <a href="#Topselling"><button className=" bg-black mt-6  text-white  px-10 py-4 rounded-full font-medium hover:bg-gray-800 transition  p-11">
             Shop Now
-          </button>
+          </button></a>
 
           <div className="flex gap-8 mt-10 text-sm">
             <div>

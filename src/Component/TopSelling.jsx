@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Dresstyle from './Dresstyle';
+import { useNavigate } from 'react-router-dom';
 
 function TopSelling() {
 let [top ,settop] = useState([])
-
+let navigate = useNavigate()
 async function getItems(){
 
  let api = await fetch("https://dummyjson.com/products?limit=4&skip=4")
@@ -20,7 +21,7 @@ useEffect(()=>{
 
 
   return (
-    <div>
+    <div id='Topselling' >
       <div className='  m-16  text-center '><button className='p-2 rounded-2xl bg-gray-200'>View All</button></div>
 
 <div className='font-serif text-center text-4xl font-bold m-8'><h1>TOP SELLING</h1></div>
@@ -29,7 +30,7 @@ useEffect(()=>{
 {
 top.map((tp ,i)=>(
 <div key={i}>
-  <img  className='bg-gray-200 rounded-2xl' src={tp.thumbnail} alt={tp.title} />
+  <img  onClick={() => navigate(`/ProductDetails/${tp.id}`)}  className='bg-gray-200 rounded-2xl' src={tp.thumbnail} alt={tp.title} />
 <p className='text-center font-bold '>{tp.title}</p>
 <p className='text-center font-medium'>stock : {tp.stock}</p>
 <div className='flex  font-medium gap-4 justify-center'>
